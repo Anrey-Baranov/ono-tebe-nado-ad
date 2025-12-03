@@ -8,11 +8,12 @@
   z-index: 0;
 }
 
+/* Шапка */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px;
+  padding: 92px 50px 92px;
 }
 
 .header__menu {
@@ -68,6 +69,7 @@
   text-decoration: none;
 }
 
+/* Обложка */
 .cover {
   position: relative;
   padding: 165px 50px 50px;
@@ -87,17 +89,16 @@
   font-weight: 700;
   line-height: 1.15;
   text-transform: uppercase;
-  letter-spacing: 30px;
 }
 
 .aligned-text {
   display: block;
+  letter-spacing: 0.3em;
 }
 
 .aligned-text_center {
   text-align: center;
   line-height: 1;
-  padding-right: 60px;
 }
 
 .aligned-text_right {
@@ -106,7 +107,7 @@
 }
 
 .letter-spacing-extended {
-  letter-spacing: 60px;
+  letter-spacing: 0.6em;
 }
 
 .no-letter-spacing {
@@ -122,6 +123,7 @@
 
 .cover__description-text {
   font-size: 22px;
+  font-weight: 400;
   line-height: 1.27;
   text-transform: uppercase;
   word-spacing: 18px;
@@ -133,13 +135,15 @@
   background-color: transparent;
   color: #fff;
   font-size: 22px;
+  font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
   font-family: Raleway, sans-serif;
 }
 
+/* Секция с лотами */
 .lots {
-  padding: 180px 50px 182px;
+  padding: 180px 50px;
 }
 
 .lots__heading {
@@ -204,6 +208,7 @@
 
 .card__text {
   font-size: 20px;
+  font-weight: 400;
   line-height: 1.2;
   z-index: 1;
 }
@@ -212,10 +217,12 @@
   display: inline-block;
   margin-left: 40px;
   font-size: 20px;
+  font-weight: 400;
   border-bottom: 1px solid currentColor;
   text-decoration: none;
 }
 
+/* Секция "Об аукционе" */
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
@@ -257,9 +264,15 @@
   flex-direction: column;
   gap: 25px;
   font-size: 20px;
+  font-weight: 400;
   line-height: 1.2;
 }
 
+.about__text p:first-child {
+  margin-bottom: 25px;
+}
+
+/* Подвал */
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -270,6 +283,7 @@
   justify-self: start;
   max-width: 240px;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.35;
 }
 
@@ -281,6 +295,7 @@
   list-style: none;
   text-align: center;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .footer__menu-link {
