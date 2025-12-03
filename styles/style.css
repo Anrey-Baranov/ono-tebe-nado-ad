@@ -8,12 +8,11 @@
   z-index: 0;
 }
 
-/* Шапка */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 96px;
+  padding: 92px 50px;
 }
 
 .header__menu {
@@ -69,7 +68,6 @@
   text-decoration: none;
 }
 
-/* Обложка */
 .cover {
   position: relative;
   padding: 165px 50px 50px;
@@ -89,16 +87,17 @@
   font-weight: 700;
   line-height: 1.15;
   text-transform: uppercase;
+  letter-spacing: 30px;
 }
 
 .aligned-text {
   display: block;
-  letter-spacing: 0.3em;
 }
 
 .aligned-text_center {
   text-align: center;
   line-height: 1;
+  padding-right: 60px;
 }
 
 .aligned-text_right {
@@ -107,7 +106,7 @@
 }
 
 .letter-spacing-extended {
-  letter-spacing: 0.6em;
+  letter-spacing: 60px;
 }
 
 .no-letter-spacing {
@@ -136,16 +135,15 @@
   font-size: 22px;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: Raleway, sans-serif;
 }
 
-/* Секция с лотами */
 .lots {
-  padding: 180px 50px;
+  padding: 180px 50px 182px;
 }
 
 .lots__heading {
-  margin-bottom: 27px;
-  padding-left: 40px;
+  margin: 0 0 27px 40px;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -218,7 +216,6 @@
   text-decoration: none;
 }
 
-/* Секция "Об аукционе" */
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
@@ -229,6 +226,7 @@
 .about__column {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .about__logo {
@@ -248,8 +246,7 @@
 }
 
 .about__title {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 100px 0;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -263,7 +260,6 @@
   line-height: 1.2;
 }
 
-/* Подвал */
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
